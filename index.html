@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Singh — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Ayush</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO SECTION ═══════════════ -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-image-wrapper">
+                <img src="profile.jpeg" alt="Ayush Singh — Profile Photo" class="hero-image">
+            </div>
+            <h1 class="hero-name">Ayush Singh</h1>
+            <p class="hero-tagline">Full-stack developer who builds end-to-end systems and enjoys a good art gallery.</p>
+            <p class="hero-intro">
+                Third-year B.Tech IT student at Manipal Institute of Technology.
+                I build full-stack and ML-backed web applications, and I'm aiming for an SDE role.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="#projects" class="btn btn-outline">View Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════════ ABOUT ME ═══════════════ -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a third-year Information Technology student at MIT Manipal,
+                        interested in backend development, information retrieval, and machine learning.
+                        I like building complete systems end to end — from the React frontend to the
+                        Django backend to the ML service behind it.
+                    </p>
+                    <p>
+                        Outside of code, I enjoy art watching — spending time with paintings and
+                        exhibitions and noticing how artists use composition and colour.
+                        I want to spend 2–3 years gaining industry experience as a software engineer
+                        before deciding on further studies.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">8.27</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Major Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2026</span>
+                        <span class="stat-label">Amazon ML Summer School</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EDUCATION ═══════════════ -->
+    <section class="section section-alt" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        <h3>B.Tech in Information Technology</h3>
+                        <p class="timeline-institution">Manipal Institute of Technology</p>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024 — 2028</p>
+                        <p>CGPA: <strong>8.27</strong>. Focusing on software development, information
+                        retrieval, and machine learning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fab fa-amazon"></i></div>
+                    <div class="timeline-content">
+                        <h3>Amazon ML Summer School 2026</h3>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2026</p>
+                        <p>Selected for Amazon's competitive machine learning summer programme.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="timeline-content">
+                        <h3>Certifications (In Progress)</h3>
+                        <p class="timeline-date"><i class="fas fa-spinner"></i> Ongoing</p>
+                        <ul class="timeline-list">
+                            <li>Meta Backend Developer — Coursera</li>
+                            <li>Meta Frontend Developer — Coursera</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-search"></i></div>
+                        <span class="project-badge">Faculty Mentored</span>
+                    </div>
+                    <h3>JournalFinder</h3>
+                    <p class="project-desc">
+                        A journal recommendation engine that combines <strong>BM25</strong> and
+                        <strong>SPECTER2</strong> over ~29,500 SCImago journals, with a domain intent
+                        classifier and predatory-journal risk assessment. Evaluated with
+                        nDCG@10, MRR, and Precision@K on a hand-labelled dataset.
+                    </p>
+                    <div class="project-stack">
+                        <span>React</span>
+                        <span>Django</span>
+                        <span>MySQL</span>
+                        <span>FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-brain"></i></div>
+                    </div>
+                    <h3>PMinds</h3>
+                    <p class="project-desc">
+                        An AI knowledge graph with a <strong>React / Django / FastAPI</strong>
+                        microservice architecture, <strong>Celery / Redis</strong> async processing,
+                        and <strong>pgvector</strong> similarity search.
+                    </p>
+                    <div class="project-stack">
+                        <span>React</span>
+                        <span>Django</span>
+                        <span>FastAPI</span>
+                        <span>Celery</span>
+                        <span>Redis</span>
+                        <span>pgvector</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-ticket-alt"></i></div>
+                    </div>
+                    <h3>Movie Ticket Booking System</h3>
+                    <p class="project-desc">
+                        A full-stack booking platform with <strong>transaction-safe seat locking</strong>,
+                        tested under concurrent booking conflicts.
+                        Containerised with <strong>Docker</strong> and CI/CD via <strong>Jenkins</strong>.
+                    </p>
+                    <div class="project-stack">
+                        <span>Flask</span>
+                        <span>React</span>
+                        <span>MySQL</span>
+                        <span>Docker</span>
+                        <span>Jenkins</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grouped">
+
+                <div class="skill-group">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fas fa-palette"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span>React</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span>Django</span>
+                        <span>Flask</span>
+                        <span>FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>pgvector</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fas fa-robot"></i> ML / IR</h3>
+                    <div class="skill-tags">
+                        <span>NLP</span>
+                        <span>BM25</span>
+                        <span>SPECTER2 Embeddings</span>
+                        <span>Retrieval Evaluation Metrics</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fas fa-tools"></i> Tools &amp; DevOps</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Jenkins</span>
+                        <span>Celery</span>
+                        <span>Redis</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ INTERESTS ═══════════════ -->
+    <section class="section" id="interests">
+        <div class="container">
+            <h2 class="section-title">Interests &amp; Hobbies</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Art Watching</h3>
+                    <p>Visiting galleries and exhibitions, following artists and noticing how they use composition and colour.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Reading</h3>
+                    <p>Reading stories and technical books.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming</h3>
+                    <p>Unwinding with games that reward strategy and exploration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Feel free to reach out — I'd love to connect!</p>
+            <div class="contact-grid">
+                <a href="mailto:ayushsngh1706@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>ayushsngh1706@gmail.com</p>
+                </a>
+                <a href="https://github.com/ayush-singh17" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>github.com/ayush-singh17</p>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-singh-a0971b314/" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Ayush Singh</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ayush Singh. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/ayush-singh17" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ayush-singh-a0971b314/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:ayushsngh1706@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ MINIMAL JS FOR NAV ═══════════════ -->
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+
+</body>
+</html>
