@@ -2,7 +2,7 @@
 
 A clean, modern, and responsive personal portfolio webpage built using pure **HTML5** and **CSS3**, designed to showcase projects, education, technical skills, and interests. Hosted and published via **GitHub Pages**.
 
-🔗 **Live Demo:** [https://ayush-singh17.github.io/portfolio/](https://ayush-singh17.github.io/portfolio/) *(Update with your repository name if different)*
+🔗 **Live Demo:** [https://ayush-singh17.github.io/Portfolio/](https://ayush-singh17.github.io/Portfolio/) *(Update with your repository name if different)*
 
 ---
 
